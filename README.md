@@ -1,6 +1,6 @@
 # capacitor-plugins-spend-smart
 
-Plugins Capacitor v7 para o app spendsmart
+A Capacitor v7 plugin that allows changing the navigation bar color on Android, including the button colors. Ideal for any app that needs visual customization of the navigation bar.
 
 ## Install
 
@@ -26,7 +26,7 @@ npx cap sync
 setColor(options: { color: string; lightButtons?: boolean; }) => Promise<void>
 ```
 
-Altera a cor da navigation bar e a cor dos botões
+Changes the navigation bar color and the button colors
 
 | Param         | Type                                                    |
 | ------------- | ------------------------------------------------------- |
@@ -34,4 +34,18 @@ Altera a cor da navigation bar e a cor dos botões
 
 --------------------
 
+## Uso
+
+Import the plugin and call the setColor function:
+
+```typescript
+import { NavigationBarPlugin } from '@carlosbageston/capacitor-plugins-spend-smart';
+
+
+await NavigationBarPlugin.setColor({ color: '#000000', lightButtons: true });
+
+await NavigationBarPlugin.setColor({ color: '#FFFFFF', lightButtons: false });
+
+await NavigationBarPlugin.setColor({ color: '#FF0000', lightButtons: true });
+```
 </docgen-api>
