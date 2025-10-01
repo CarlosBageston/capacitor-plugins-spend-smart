@@ -51,13 +51,13 @@ Changes the navigation bar color and the button colors
 Import the plugin and call the setColor function:
 
 ```typescript
-import { NavigationBarPlugin } from '@carlosbageston/capacitor-plugins-spend-smart';
+import { NavigationBar } from '@carlosbageston/capacitor-plugins-spend-smart';
 
 
-await NavigationBarPlugin.setColor({ color: '#000000', lightButtons: true });
+await NavigationBar.setColor({ color: '#000000', lightButtons: true });
 
-await NavigationBarPlugin.setColor({ color: '#FFFFFF', lightButtons: false });
+await NavigationBar.setColor({ color: '#FFFFFF', lightButtons: false });
 
-await NavigationBarPlugin.setColor({ color: '#FF0000', lightButtons: true });
+await NavigationBar.setColor({ color: '#FF0000', lightButtons: true });
 ```
 </docgen-api>
