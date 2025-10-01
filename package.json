@@ -1,6 +1,6 @@
 {
-  "name": "capacitor-plugins-spend-smart",
-  "version": "0.0.1",
+  "name": "@carlosbageston/capacitor-plugins-spend-smart",
+  "version": "1.0.0",
   "description": "Plugins Capacitor v7 para o app spendsmart",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
@@ -19,16 +19,19 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CarlosBageston/capacitor-plugins-spend-smart.git.git"
+    "url": "git+https://github.com/CarlosBageston/capacitor-plugins-spend-smart.git"
   },
   "bugs": {
-    "url": "https://github.com/CarlosBageston/capacitor-plugins-spend-smart.git/issues"
+    "url": "https://github.com/CarlosBageston/capacitor-plugins-spend-smart/issues"
   },
   "keywords": [
     "capacitor",
     "plugin",
     "native"
   ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "scripts": {
     "verify": "npm run verify:ios && npm run verify:android && npm run verify:web",
     "verify:ios": "xcodebuild -scheme CapacitorPluginsSpendSmart -destination generic/platform=iOS",
@@ -47,7 +50,7 @@
   },
   "devDependencies": {
     "@capacitor/android": "^7.0.0",
-    "@capacitor/core": "^7.0.0",
+    "@capacitor/core": "^7.4.3",
     "@capacitor/docgen": "^0.3.0",
     "@capacitor/ios": "^7.0.0",
     "@ionic/eslint-config": "^0.4.0",
@@ -59,7 +62,7 @@
     "rimraf": "^6.0.1",
     "rollup": "^4.30.1",
     "swiftlint": "^2.0.0",
-    "typescript": "~4.1.5"
+    "typescript": "5.1"
   },
   "peerDependencies": {
     "@capacitor/core": ">=7.0.0"
@@ -76,5 +79,8 @@
     "android": {
       "src": "android"
     }
+  },
+  "dependencies": {
+    "@capacitor/cli": "^7.4.3"
   }
 }
