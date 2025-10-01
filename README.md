@@ -4,11 +4,23 @@ A Capacitor v7 plugin that allows changing the navigation bar color on Android, 
 
 ## Install
 
-```bash
+Since this plugin is hosted on **GitHub Packages**, you need a **personal access token** to install it. Follow these steps:
+
+1. Create a personal access token on GitHub with the following permissions:
+   - `read:packages` (required)
+   - Optionally, include `repo` permissions if needed
+
+2. Add the token to your project. Create or edit a file named `.npmrc` in the root of your project with:
+
+```ini
+@carlosbageston:registry=https://npm.pkg.github.com/
+//npm.pkg.github.com/:_authToken=YOUR_PERSONAL_ACCESS_TOKEN
+
+
 npm install @carlosbageston/capacitor-plugins-spend-smart@1.0.0
 npx cap sync
-```
 
+```
 ## API
 
 <docgen-index>
