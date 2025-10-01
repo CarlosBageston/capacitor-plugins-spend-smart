@@ -5,7 +5,7 @@ Plugins Capacitor v7 para o app spendsmart
 ## Install
 
 ```bash
-npm install capacitor-plugins-spend-smart
+npm install @carlosbageston/capacitor-plugins-spend-smart@1.0.0
 npx cap sync
 ```
 
